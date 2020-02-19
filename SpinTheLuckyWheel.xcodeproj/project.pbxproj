@@ -13,6 +13,7 @@
 		FECAD53523FD0FED00C66EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAD53323FD0FED00C66EEE /* Main.storyboard */; };
 		FECAD53723FD0FEE00C66EEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECAD53623FD0FEE00C66EEE /* Assets.xcassets */; };
 		FECAD53A23FD0FEE00C66EEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECAD53823FD0FEE00C66EEE /* LaunchScreen.storyboard */; };
+		FECAD54223FD11F300C66EEE /* TheWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD54123FD11F300C66EEE /* TheWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FECAD53623FD0FEE00C66EEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FECAD53923FD0FEE00C66EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FECAD53B23FD0FEE00C66EEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECAD54123FD11F300C66EEE /* TheWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FECAD53623FD0FEE00C66EEE /* Assets.xcassets */,
 				FECAD53823FD0FEE00C66EEE /* LaunchScreen.storyboard */,
 				FECAD53B23FD0FEE00C66EEE /* Info.plist */,
+				FECAD54123FD11F300C66EEE /* TheWheel.swift */,
 			);
 			path = SpinTheLuckyWheel;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FECAD53223FD0FED00C66EEE /* ViewController.swift in Sources */,
+				FECAD54223FD11F300C66EEE /* TheWheel.swift in Sources */,
 				FECAD52E23FD0FED00C66EEE /* AppDelegate.swift in Sources */,
 				FECAD53023FD0FED00C66EEE /* SceneDelegate.swift in Sources */,
 			);
