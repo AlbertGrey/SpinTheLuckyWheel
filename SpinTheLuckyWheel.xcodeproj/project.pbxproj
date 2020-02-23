@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE5441BB23FE7138008312C5 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */; };
 		FECAD52E23FD0FED00C66EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD52D23FD0FED00C66EEE /* AppDelegate.swift */; };
 		FECAD53023FD0FED00C66EEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD52F23FD0FED00C66EEE /* SceneDelegate.swift */; };
 		FECAD53223FD0FED00C66EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD53123FD0FED00C66EEE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
 		FECAD52A23FD0FED00C66EEE /* SpinTheLuckyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinTheLuckyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAD52D23FD0FED00C66EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FECAD52F23FD0FED00C66EEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FECAD53823FD0FEE00C66EEE /* LaunchScreen.storyboard */,
 				FECAD53B23FD0FEE00C66EEE /* Info.plist */,
 				FECAD54123FD11F300C66EEE /* TheWheel.swift */,
+				FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */,
 			);
 			path = SpinTheLuckyWheel;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				FECAD53223FD0FED00C66EEE /* ViewController.swift in Sources */,
 				FECAD54223FD11F300C66EEE /* TheWheel.swift in Sources */,
+				FE5441BB23FE7138008312C5 /* OptionsTableViewController.swift in Sources */,
 				FECAD52E23FD0FED00C66EEE /* AppDelegate.swift in Sources */,
 				FECAD53023FD0FED00C66EEE /* SceneDelegate.swift in Sources */,
 			);
@@ -220,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928C5AVPJ3;
 				INFOPLIST_FILE = SpinTheLuckyWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928C5AVPJ3;
 				INFOPLIST_FILE = SpinTheLuckyWheel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
