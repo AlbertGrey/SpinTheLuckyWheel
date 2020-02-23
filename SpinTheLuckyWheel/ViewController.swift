@@ -40,9 +40,9 @@ class ViewController: UIViewController {
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: {
                 (result) in
                 sender.isEnabled = true
-//                if self.currentValue > 2500{
-//                    self.currentValue = 0
-//                }
+                if self.currentValue > 2500{
+                    self.currentValue = 0
+                }
             })
             alert.addAction(alertAction)
             self.present(alert, animated: true, completion:nil)
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        print("WillAppear")
+        print("WillAppear")
         reloadOption()
     }
     
@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     func reloadOption() {
         if let opArray = UserDefaults.standard.array(forKey: "optionslist"){
             optionsArray = opArray
+            degreeArray = []
+            tempdegree = 0.0
             for _ in 0...optionsArray.count{
                 let degreeOfPiece = 360.0 / Double(optionsArray.count)
                 let gapOfDegree = (degreeOfPiece * 100.0).rounded() / 100.0
@@ -72,6 +74,7 @@ class ViewController: UIViewController {
                 degreeArray.append(tempdegree)
                 tempdegree += gapOfDegree
             }
+            print("newGegreeArray=\(degreeArray)")
         }
 
     }
@@ -89,8 +92,8 @@ class ViewController: UIViewController {
         let value = currentValue.truncatingRemainder(dividingBy: Double.pi * 2)
     //       print("轉的圈數除以2pi求於數=\(value)")
         let degree = value * 180/Double.pi // 以弧度的角度，把弧度乘以 180/pi 轉為角度
-//        print("viewC:degree=\(degree)")
-//        print("viewC:degreeArray=\(degreeArray)")
+        print("viewC:degree=\(degree)")
+        print("viewC:degreeArray=\(degreeArray)")
         print("optionArray=\(optionsArray)")
         for i in 0..<degreeArray.count{
             if degree >= degreeArray[i] && degree < degreeArray[i + 1]{

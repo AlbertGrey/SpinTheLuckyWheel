@@ -95,7 +95,7 @@ class OptionsTableViewController: UITableViewController {
             optionsArray = loadedList
         }
     }
-    
+    //alert
     func popUpAlertWithDefault(_ defaultValue:String?,Handler handler: @escaping (Bool, String?) -> ()){
         var titleText = ""
         if defaultValue == nil{
@@ -132,7 +132,7 @@ class OptionsTableViewController: UITableViewController {
     }
 
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "showDetail"{
+//            if segue.identifier == "showDetail"{
     //            if let detailPage = segue.destination as? DetailViewController{
     //                let selectIndexpath = self.tableView.indexPathForSelectedRow
     //                if let selectRow = selectIndexpath?.row{
@@ -140,7 +140,7 @@ class OptionsTableViewController: UITableViewController {
     //                }
     //
     //            }
-            }
+//            }
         }
     
     
