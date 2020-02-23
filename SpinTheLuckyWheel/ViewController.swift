@@ -61,12 +61,11 @@ class ViewController: UIViewController {
         reloadOption()
     }
     
-    var tempdegree = 0.0
     func reloadOption() {
         if let opArray = UserDefaults.standard.array(forKey: "optionslist"){
             optionsArray = opArray
             degreeArray = []
-            tempdegree = 0.0
+            var tempdegree = 0.0
             for _ in 0...optionsArray.count{
                 let degreeOfPiece = 360.0 / Double(optionsArray.count)
                 let gapOfDegree = (degreeOfPiece * 100.0).rounded() / 100.0
@@ -106,27 +105,6 @@ class ViewController: UIViewController {
             }
         }
         
-        
-//        switch degree { // 依照不同角度判斷轉到的區塊,指標指向正上方,所以想像正上方為0度，且順時針旋轉所以圖片要逆時針看
-//            case 0..<45:
-//                result = "淺藍色"
-//            case 45..<90:
-//                result = "橘色"
-//            case 90..<135:
-//                result = "黃色"
-//            case 135..<180:
-//                result = "紫色"
-//            case 180..<225:
-//                result = "深藍色"
-//            case 225..<270:
-//                result = "紅色"
-//            case 270..<315:
-//                result = "黃色"
-//            case 315..<360:
-//                result = "綠色"
-//            default:
-//                result = "彩色(?)"
-//            }
         animation.toValue = currentValue
         animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
