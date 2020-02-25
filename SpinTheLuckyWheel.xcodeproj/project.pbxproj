@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2BEE822404F77C00EB5FC7 /* okspin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE2BEE812404F77C00EB5FC7 /* okspin.mp3 */; };
 		FE5441BB23FE7138008312C5 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */; };
 		FECAD52E23FD0FED00C66EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD52D23FD0FED00C66EEE /* AppDelegate.swift */; };
 		FECAD53023FD0FED00C66EEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECAD52F23FD0FED00C66EEE /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE2BEE812404F77C00EB5FC7 /* okspin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = okspin.mp3; sourceTree = "<group>"; };
 		FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
 		FECAD52A23FD0FED00C66EEE /* SpinTheLuckyWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinTheLuckyWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECAD52D23FD0FED00C66EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				FECAD53B23FD0FEE00C66EEE /* Info.plist */,
 				FECAD54123FD11F300C66EEE /* TheWheel.swift */,
 				FE5441BA23FE7138008312C5 /* OptionsTableViewController.swift */,
+				FE2BEE812404F77C00EB5FC7 /* okspin.mp3 */,
 			);
 			path = SpinTheLuckyWheel;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2BEE822404F77C00EB5FC7 /* okspin.mp3 in Resources */,
 				FECAD53A23FD0FEE00C66EEE /* LaunchScreen.storyboard in Resources */,
 				FECAD53723FD0FEE00C66EEE /* Assets.xcassets in Resources */,
 				FECAD53523FD0FED00C66EEE /* Main.storyboard in Resources */,

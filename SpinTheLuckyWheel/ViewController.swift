@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var audioMatrix:[AVAudioPlayer?] = [AVAudioPlayer?]()
     var numOfOption = 0
     //spin
     var currentValue:Double = 0
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         rotateGradually(handler: {
             (result) in
 //            print("result=\(result)")
-            let alert = UIAlertController(title: "你選到了\(result)", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "結果為 \(result)", message: nil, preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: {
                 (result) in
                 sender.isEnabled = true
@@ -52,6 +54,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        addMusic()
         optionsArray = ["1","2","3","4"]
         UserDefaults.standard.register(defaults: ["optionslist":optionsArray])
     }
@@ -80,6 +83,8 @@ class ViewController: UIViewController {
 
 
     func rotateGradually(handler: @escaping (String)->()){
+        audioMatrix[0]?.stop()
+        audioMatrix[0]?.currentTime = 0
         var result = ""
         let randomDouble = Double.random(in: 0..<2*Double.pi)//0~2pi,確認會多轉幾度
 //        print("viewC:randomDouble=\(randomDouble)")
@@ -104,11 +109,11 @@ class ViewController: UIViewController {
                 break
             }
         }
-        
+        audioMatrix[0]?.play()
         animation.toValue = currentValue
         animation.isRemovedOnCompletion = false
         animation.fillMode = .forwards
-        animation.duration = 3 //動畫時間
+        animation.duration = 5 //動畫時間
         //animation.autoreverses = true //迴轉
         animation.repeatCount = 1
         CATransaction.setCompletionBlock({
@@ -119,6 +124,18 @@ class ViewController: UIViewController {
         animation.timingFunction = CAMediaTimingFunction(controlPoints: 0, 0.9, 0.4, 1.00) //
         theWheel.layer.add(animation, forKey: nil)
         CATransaction.commit()
+    }
+    
+    func addMusic(){
+        guard let path = Bundle.main.path(forResource: "okspin", ofType: "mp3") else{
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+        do{
+            audioMatrix.append(try AVAudioPlayer(contentsOf: url))
+        }catch{
+            audioMatrix.append(nil)
+        }
     }
     
 

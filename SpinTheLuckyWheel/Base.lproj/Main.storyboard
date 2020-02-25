@@ -383,7 +383,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.72131182923957216" green="0.83751755952835083" blue="0.73635695494301134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7ma-Nd-8H6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="74a-kd-bmi"/>
                             <constraint firstItem="ld2-mj-zKq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IAh-eb-iGi"/>
@@ -418,7 +418,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wbf-2D-yTM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="optionCell" id="dl8-yn-brq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
@@ -442,7 +442,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="fLc-In-lqP">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="U0l-vZ-ZwL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" landscapeImage="plus" largeContentSizeImage="plus" id="U0l-vZ-ZwL">
                             <connections>
                                 <action selector="addOption:" destination="lkO-bh-cUi" id="xbv-Oo-U7a"/>
                             </connections>
