@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     var degreeArray = [Double]()
     //spin-e
     
+    @IBOutlet weak var optionsNumber: UILabel!
     @IBOutlet weak var theWheel: TheWheel!
     @IBOutlet weak var showTheOption: UILabel!
     @IBAction func numbers(_ sender: UIButton) {
@@ -77,6 +78,7 @@ class ViewController: UIViewController {
                 tempdegree += gapOfDegree
             }
             print("newGegreeArray=\(degreeArray)")
+            self.optionsNumber.text = String(optionsArray.count)
         }
 
     }
