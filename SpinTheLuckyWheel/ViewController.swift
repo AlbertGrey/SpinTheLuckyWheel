@@ -78,7 +78,7 @@ class ViewController: UIViewController {
                 tempdegree += gapOfDegree
             }
             print("newGegreeArray=\(degreeArray)")
-            self.optionsNumber.text = String(optionsArray.count)
+            self.optionsNumber.text = String(optionsArray.count) + "種喔！"
         }
 
     }
