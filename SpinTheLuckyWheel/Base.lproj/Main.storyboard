@@ -382,6 +382,13 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cd-Sg-AwO">
+                                <rect key="frame" x="16" y="614" width="343" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.72131182923957216" green="0.83751755952835083" blue="0.73635695494301134" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -404,12 +411,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="optionsNumber" destination="9Cd-Sg-AwO" id="Drp-mL-qbq"/>
                         <outlet property="theWheel" destination="MBu-fM-pvl" id="wH4-tt-RNh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2098" y="111"/>
+            <point key="canvasLocation" x="2096.8000000000002" y="110.83743842364532"/>
         </scene>
         <!--Options Table View Controller-->
         <scene sceneID="ge5-rk-eEB">
