@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         rotateGradually(handler: {
             (result) in
 //            print("result=\(result)")
-            let alert = UIAlertController(title: "結果為 \(result)", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "結果為 \(result)", message: "轉到就是命！別轉第二次啦～", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "OK", style: .default, handler: {
                 (result) in
                 sender.isEnabled = true
